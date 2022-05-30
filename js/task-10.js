@@ -21,10 +21,13 @@ function BoxSize(obj, index) {
   obj.classList.add("new-box");
 }
 
+
 function сreation(value) {
-  for (let i = 0; i < value; i++) {
+    const limit = box.childElementCount;
+
+  for (let i = limit; i < Number(value) + limit; i++) {
     const boxy = box.appendChild(document.createElement("div"));
-    BoxSize(boxy, i);
+    BoxSize(boxy, i)
   }
 }
 

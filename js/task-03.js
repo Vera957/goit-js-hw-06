@@ -15,16 +15,12 @@ const images = [
 
 const imgList = document.querySelector(".gallery");
 
-const result = images.forEach(function(item){
-  imgList.insertAdjacentHTML("afterbegin", '<li></li>');
-  let el = document.querySelector('li');
-  el.className = 'item_task_3'
-  el.insertAdjacentHTML('afterbegin', '<img/>');
-  let img = document.querySelector('img');
-  img.src = item.url;
-  img.alt = item.alt;
-  img.className = "img_task_3";
-  imgList.append(el);
-})
+const result = images.map((item) =>
+  imgList.insertAdjacentHTML(
+    "afterbegin",
+    `<li class="item_task_3"><img class="" src=${item.url} alt=${item.alt}/></li>`
+  )
+);
+;
 
 

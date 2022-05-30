@@ -36,10 +36,6 @@ button {
   display: flex;
 }
 
-.item_task_3:not(:last-child) {
-  margin-right: 5px;
-}
-
 .img_task_3 {
   display: block;
   max-height: 400px;

@@ -11,10 +11,13 @@ function onFormSubmit(event) {
   if (formEl.email.value === "" || formEl.password.value === "") {
     alert("all fields must be filled in");
   } else {
-    const formValues = new FormData(event.currentTarget);
-    formValues.forEach((value, name) => {
-      console.log(name + ":", value);
-    });
+        
+    const obj = {
+      email: event.currentTarget.elements.email.value,
+      password: event.currentTarget.elements.password.value,
+    }
+
+    console.log(obj);
     formEl.reset();
   }
 }
