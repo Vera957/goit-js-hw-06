@@ -3,6 +3,7 @@
 const categories = document.querySelector("#categories");
 const item = categories.querySelectorAll(".item");
 console.log(`Number of categories: ${item.length}`);
+const liItems = document.querySelectorAll(".item li");
 
 const result = item.forEach(function (elem) {
   const elemName = elem.querySelector("h2").textContent;
@@ -11,3 +12,4 @@ const result = item.forEach(function (elem) {
   console.log(`Category: ${elemName}`);
   console.log(`Elements: ${elemSum}`);
 });
+
