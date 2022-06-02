@@ -10,15 +10,15 @@ const ingredients = [
 ];
 
 const list = document.querySelector("#ingredients");
+
 const arr = [];
 
-ingredients.forEach(e => {
-  const li = document.createElement('li');
+ingredients.forEach((e) => {
+  const li = document.createElement("li");
   li.textContent = e;
-  li.classList.add('item');
-  console.log(li);
-  arr.push(li)
-})
+  li.classList.add("item");
+  arr.push(li);
+});
 
 list.append(...arr);
 
